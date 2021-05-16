@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Task 3</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+     let n = prompt("Enter the number of rows"); 
+    let string = "";
+    for (let i = 1; i <= n; i++) {
+      for (let j = n; j > i; j--) {
+        string += " ";
+        string += " ";
+      }
+      for (let k = 0; k < i * 2 - 1; k++) {
+        string += "*";
+        string += " ";
+      }
+      string += "<br>";
+    }
+    document.write(`<pre>${string}</pre>`);
+        </script>
+    </body>
+</html>

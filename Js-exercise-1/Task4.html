@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+           let n = prompt("Enter the number of rows");
+           let y = parseInt(n);
+            let str = " ";
+            for(let i=0; i<=y; i++){
+                for(let j=0; j<=y; j++)
+                {
+                    if(i===j || i+j===y){
+                        str += " ";
+                        str += "*";
+                    }else{
+                        str += " ";
+                    }   
+                    str += " ";
+                }
+                str += "<br>";
+            }
+            document.write(`<pre>${str}<pre>`);
+        </script>
+    </body>
+</html>
