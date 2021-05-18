@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Task 5</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+     var array1=[1,2,3,4,5,6,7];                                         
+    var array2=[5,6,7,8,9,10];
+     function union()                                                       
+    {      
+        let un = [...new Set([...array1, ...array2])];
+        return un;
+
+    }
+
+    function difference()
+    {
+        var diff = array1.filter(x => !array2.includes(x));
+        var diff2 = array2.filter(x => !array1.includes(x));;
+        return diff.concat(diff2);
+    }
+
+    function intersction(){
+        let inter = array1.filter(x => array2.includes(x));
+        return inter;
+    }
+        document.write(intersction());
+        document.write("<br>");
+        document.write(difference());
+        document.write("<br>")
+        document.write(union()); 
+        </script>     
+    </body>
+</html>

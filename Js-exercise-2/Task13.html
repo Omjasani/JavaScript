@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Task 13</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        let n = prompt("enter the numer");
+        let num = parseInt(n);
+        function thousands()
+        {
+            var num_parts = num.toString().split(".");
+            num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            let ans = num_parts.join(".");
+            document.write(`${ans}`);
+        }
+            thousands();
+        </script>
+    </body>
+</html>

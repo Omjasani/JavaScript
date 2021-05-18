@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Task 12</title>
+    </head>
+        <body>
+            <script type="text/javascript">
+            let str = prompt("Enter the string");
+            let n = prompt("enter a digit");
+            let size = parseInt(n);
+            function chop()
+            {
+                if (str == null){
+                return [];
+                }
+                str = String(str);
+                let ans = size > 0 ? str.match(new RegExp('.{1,' + size + '}', 'g')) : [str];
+                document.write(`${ans}`);
+            }
+            chop();
+            </script>
+        </body>
+</html>

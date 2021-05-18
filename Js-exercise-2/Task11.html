@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Task 11</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        let main_string = prompt("enter the main string");
+        let ins_string = prompt("enter the string");
+        let n = prompt("enter the position");
+        let pos = parseInt(n);
+        function insert() {
+             if(typeof(pos) == "undefined") {
+               pos = 0;
+            }
+             if(typeof(ins_string) == "undefined") {
+                ins_string = '';
+             }
+             let ans = main_string.slice(0, pos) + ins_string + main_string.slice(pos);
+             document.write(`${ans}`);
+        }
+        insert();
+
+        </script>
+    </body>
+</html>

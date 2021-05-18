@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Task 3</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        let array = [3,4,5,2,3,4,5,4,6,4,4,1,4,8,7,9,4];
+        let m = 1;
+        let n = 0;
+        for(let i=0;i<array.length;i++){
+            for(let j=i;j<array.length;j++)
+            {
+                if(array[i] == array[j]){
+                n++;
+                }
+                if(m<n)
+                {
+                    m=n;
+                    var item = array[i];
+                }
+            }
+            n=0;
+        }
+        document.write(item+"("+m +"times)");
+        </script>
+    </body>
+</html>

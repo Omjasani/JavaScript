@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Task 15</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        let call = prompt("press 1 to insert and press 2 to delete")
+        
+        let static_array = [
+        {name:  "Jack" , age : 23}, 
+        {name:  "Sam" , age : 12},  
+        {name:  "Max" , age : 20}
+        ];
+          console.log(static_array);
+        function inst(){
+        let i = prompt("enter the name");
+        let k = prompt("enter the age");
+        let j = parseInt(k);
+        let p = prompt("enter the index number")
+        let ind = parseInt(p);
+        if(ind > static_array.length+1){
+            console.log("invalid entery");
+        }else {
+         return static_array.splice(ind,0,{name: i, age: j});
+        }
+        }
+
+        
+    
+        function del(){
+        let q = prompt("enter the index number");
+        let ins = parseInt(q);
+        if (ins>static_array.length){
+            console.log("invalid entery");
+        }else{
+         return delete static_array[ins];
+        }
+        }
+
+        if(call == "1"){
+        inst();
+        }else if(call == "2"){
+        del();
+        }else{
+            console.log("invalid entery");
+        }
+        </script>
+    </body>
+</html>

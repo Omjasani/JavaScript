@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Task 10</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+         var dateFirst = new Date("11/25/2017");
+         var dateSecond = new Date("11/28/2018");
+         var timeDiff = Math.abs(dateSecond.getTime() - dateFirst.getTime());
+
+         var diffDays = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+         var diffhour = Math.ceil(timeDiff / (1000 * 60 * 60));
+         var diffmin = Math.ceil(timeDiff / (1000 * 60));
+         let n = diffDays;
+         let h = diffhour;
+         let m = diffmin; 
+            let y = 30;
+            let p = 12;
+            let q = 7;
+
+         year = parseInt(n / 365);
+        month = parseInt((n % 365) / y);
+        days = (n % 365) % y;
+          months = Math.ceil(n / y);
+          week = Math.ceil(n / p);
+          
+        document.write("years = " + year + " month = "+ month + " days = " + days + "<br>");
+          document.write("or months = " + months + " days = " + days + "<br>");
+          document.write("or week = " + week + " days = " + days + "<br>");
+          document.write("days = " + n + "<br>");
+          document.write("hours = " + h + "<br>");
+          document.write("minutes = " + m );
+        </script>
+    </body>
+</html>

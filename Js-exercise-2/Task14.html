@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Task 14</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        let person = [
+            { id: 1, name: "tom", age: 20 },
+            { id: 2, name: "harry", age: 21 },
+            { id: 3, name: "bob", age: 54 },
+            { id: 4, name: "tim", age: 23 },
+            { id: 5, name: "lio", age: 12 },
+            { id: 6, name: "jordy", age: 65 },
+            { id: 7, name: "jack", age: 12 },
+            { id: 8, name: "jimmy", age: 65 },
+            { id: 9, name: "paul", age: 76 },
+            { id: 10, name: "jhonny", age: 23 },
+        ];
+           person.sort(function (a,b){
+                return a.age - b.age;
+           });
+           console.log(person);
+
+           person.sort(function(a, b) 
+           {
+                var x = a.name.toLowerCase();
+                var y = b.name.toLowerCase();
+                if(x > y) 
+                {
+                    return -1;
+                }
+                if(x < y) 
+                {
+                    return 1;
+                }
+                return 0;
+    });
+     for(var i in person)
+     {  
+        for(var prop in person[i]) 
+        {              
+            document.write(prop + ": " + person[i][prop] + "<br>"); 
+        }
+    }
+    
+
+
+
+        </script>
+    </body>
+</html>
